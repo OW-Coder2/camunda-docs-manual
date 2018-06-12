@@ -65,7 +65,7 @@ It can also be set using Spring XML or a deployment descriptor (bpm-platform.xml
 <property name="history">audit</property>
 ```
 
-Note that when using the default history backend, the history level is stored in the database and cannot be changed later.
+Note that when using the default history backend, the history level is stored in the database and can only be changed later in the database. In this case the field 'historyLevel' must be changed in the database table ACT_GE_PROPERTY. 0 equals to NONE, 1 equals to ACTIVITY and so on.
 
 
 # The Default History Implementation
